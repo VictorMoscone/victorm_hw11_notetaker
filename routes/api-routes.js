@@ -18,6 +18,7 @@ router.post("/notes", (req, res) => {
         noteInfo.push({
             title: req.body.title,
             text: req.body.text,
+            noteId: uniqid(),
         });
 
         console.log(noteInfo);
