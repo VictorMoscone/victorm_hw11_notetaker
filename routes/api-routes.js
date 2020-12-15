@@ -16,8 +16,8 @@ router.post("/notes", (req, res) => {
         const noteInfo = JSON.parse(data);
 
         noteInfo.push({
-            title: req.body.title,
-            text: req.body.text,
+            noteTitle: req.body.title,
+            noteText: req.body.text,
             noteId: uniqid(),
         });
 
